@@ -21,6 +21,7 @@ const InputBox = ({
         </label>
         <input
           type="number"
+          placeholder="0"
           value={amount}
           onChange={(e) =>
             onAmountChange && onAmountChange(Number(e.target.value))
