@@ -4,7 +4,7 @@ export const ProdContext = createContext();
 
 export const ProdContextProvider = ({ children }) => {
   const [isProdUse, setIsProdUse] = useState(false);
-  const [prodName, setProdName] = useState("Using Prod Name Test");
+  const [prodName, setProdName] = useState("Using Prod Data");
 
   const prodData = {
     isProdUse,
