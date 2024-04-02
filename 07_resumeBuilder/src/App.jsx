@@ -71,51 +71,53 @@ function App() {
         Download Resume
       </button>
       <div className="flex-1 h-full bg-black p-4 overflow-y-scroll">
-        {/* Basic details section */}
-        <Input
-          label="Full Name"
-          type="text"
-          value={fullName}
-          onChange={(event) => setFullName(event.target.value)}
-        />
+        <div className="m-4 border rounded-lg p-3">
+          {/* Basic details section */}
+          <Input
+            label="Full Name"
+            type="text"
+            value={fullName}
+            onChange={(event) => setFullName(event.target.value)}
+          />
 
-        <Input
-          label="Profession"
-          type="text"
-          value={currentProfession}
-          onChange={(event) => setCurrentProfession(event.target.value)}
-        />
+          <Input
+            label="Profession"
+            type="text"
+            value={currentProfession}
+            onChange={(event) => setCurrentProfession(event.target.value)}
+          />
 
-        <Input
-          label="Mobile Number"
-          type="number"
-          min="10"
-          max="10"
-          value={mobileNo}
-          onChange={(event) => setMobileNo(event.target.value)}
-        />
+          <Input
+            label="Mobile Number"
+            type="number"
+            min="10"
+            max="10"
+            value={mobileNo}
+            onChange={(event) => setMobileNo(event.target.value)}
+          />
 
-        <Input
-          label="Email"
-          type="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-        />
+          <Input
+            label="Email"
+            type="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
 
-        <Input
-          label="Residential Address"
-          type="text"
-          value={address}
-          onChange={(event) => setAddress(event.target.value)}
-        />
+          <Input
+            label="Residential Address"
+            type="text"
+            value={address}
+            onChange={(event) => setAddress(event.target.value)}
+          />
 
-        {/* summary */}
-        <Input
-          label="Summary / Career Objective "
-          type="text"
-          value={summary}
-          onChange={(event) => setSummary(event.target.value)}
-        />
+          {/* summary */}
+          <Input
+            label="Summary / Career Objective "
+            type="text"
+            value={summary}
+            onChange={(event) => setSummary(event.target.value)}
+          />
+        </div>
         {/* education */}
         <div className="flex flex-wrap m-4 border rounded-lg p-3">
           <Input
